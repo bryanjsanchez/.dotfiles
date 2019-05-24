@@ -15,8 +15,6 @@ export PS1+="$ "                                # $
 
 # $PATH setup
 export PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-export PATH="/Users/nemo/miniconda2/bin:$PATH" # added by Miniconda2 installer
-export PATH="~/.local/bin:/anaconda3/bin:$PATH" # added by Anaconda3 5.2.0 installer
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH" # added by MacPorts (I think)
 
 # Miscellaneous
