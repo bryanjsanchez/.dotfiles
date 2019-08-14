@@ -18,6 +18,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'wesQ3/vim-windowswap'
 Plugin 'tpope/vim-commentary'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'ycm-core/YouCompleteMe'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -63,6 +64,7 @@ set incsearch                   " Search as you add characters to search string
 set hlsearch                    " Highlight all matches
 set splitbelow                  " Split window below current window
 set splitright                  " Split window to the right of current window
+set backspace=indent,eol,start  " Backspace stopped working after version 8.1.1800 
 
 let mapleader=","
 nnoremap <leader><space> :nohlsearch<Bar>:echo<CR>
@@ -70,7 +72,8 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-map <leader>n :NERDTreeToggle<CR>
+map <leader>t :NERDTreeToggle<CR>
 map <leader>/ :Commentary<CR>j
 map <leader>f :CtrlP<CR>
+let g:ycm_autoclose_preview_window_after_completion = 1 "YouCompleteMe close preview after autocomplete
 " let g:EnvImprovement_SetTitleEnabled = 1 "delete maybe
